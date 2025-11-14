@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NRBJQS7H');</script>
+    <!-- End Google Tag Manager -->
+    <title>Vastin | Válvulas Industriais de Alta Performance</title>
+    <!-- Carregamento do Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Carregamento do Font Awesome para ícones (necessário para o WhatsApp) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMD/CDtqgIUsK8I98GzW90n1gY/FfO8mG2A/9XgL8wB5+gP6nIq39G5O+K+Sg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Configuração de Fontes e Cores (Inter é a fonte padrão) -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f3f3; /* Fundo alterado para cinza claro (#f3f3f3) */
+        }
+        .main-color {
+            background-color: #0b4f8d; /* Azul Escuro Profissional (Vastin) */
+        }
+        .accent-color {
+            background-color: #e53e3e; /* Vermelho/Accent para CTAs */
+        }
+        /* Estilo para a imagem do logo no cabeçalho (96px de altura, o tamanho anterior) */
+        .header-logo {
+            height: 60px; /* Aumentado de 48px para 60px (25% a mais) */
+            width: auto;
+        }
+        /* Nova cor verde para o CTA */
+        .whatsapp-color {
+             background-color: #25D366; /* Verde WhatsApp */
+        }
+        /* Estilo para as logos de clientes */
+        .client-logo {
+            max-height: 48px; /* Altura máxima para logos de clientes */
+            width: auto;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+        .client-logo:hover {
+            opacity: 1;
+        }
+        /* Estilo para a logo no rodapé (Aumento para 80px e remoção do filtro problemático) */
+        .footer-logo {
+            max-height: 80px; /* Dobro do tamanho anterior para maior visibilidade */
+            width: auto;
+            margin-bottom: 8px;
+            /* O filtro foi removido para evitar problemas de renderização */
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NRBJQS7H"
+    height="0" width="0"
+    style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Navbar/Header Simples (COR BRANCA) -->
+    <header class="bg-white shadow-lg border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo Vastin -->
+            <img src="https://i.imgur.com/RmWh4cS.png" alt="Logo Vastin" class="header-logo">
+            <!-- Slogan removido -->
+        </div>
+    </header>
+
+    <!-- Seção Principal (Hero com Formulário de Captura) - Removendo padding-top (pt-0) -->
+    <main class="pt-0 pb-12 md:pb-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Alinhamento no topo para Desktop -->
+            <div class="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-start">
+                
+                <!-- Coluna de Conteúdo (Valor e Benefícios) -->
+                <div class="lg:max-w-xl mb-12 lg:mb-0">
+                    <h2 class="text-5xl md:text-6xl font-extrabold leading-tight text-gray-900 mb-6 mt-12 md:mt-16">
+                        A válvula certa faz toda diferença! <br><span class="text-sky-700">VASTIN INDUSTRIA DE VALVULAS.</span>
+                    </h2>
+                    <p class="text-xl text-gray-600 mb-8">
+                        As válvulas Vastin garantem eficiência máxima e operação sem falhas em sistemas de refrigeração industrial.
+                    </p>
+
+                    <!-- BLOC DE IMAGEM SUBSTITUINDO OS BENEFÍCIOS -->
+                    <div class="mb-8 rounded-xl overflow-hidden shadow-xl border-2 border-gray-200">
+                        <!-- Imagem substitui a lista de benefícios -->
+                        <img src="https://i.imgur.com/ABE6luj.png" alt="Válvula Industrial de Alta Performance em Aço" class="w-full h-auto object-cover">
+                    </div>
+                    <!-- FIM DO BLOCO DE IMAGEM -->
+                </div>
+
+                <!-- Coluna do Formulário de Captura (Lead Magnet) -->
+                <div class="bg-white p-6 sm:p-8 rounded-xl shadow-2xl border-t-4 border-sky-700 mt-12 md:mt-16">
+                    <h3 class="text-2xl font-bold text-center text-gray-900 mb-6">
+                        Preencha o <span class="text-sky-700">formulário</span> e receba um orçamento
+                    </h3>
+                    
+                    <!-- O FORMULÁRIO NÃO TEM MAIS "action" NEM "target" pois o envio é feito via JavaScript (fetch) -->
+                    <form id="leadCaptureForm" class="space-y-4" method="POST"> 
+                        
+                        <!-- Campo Nome - name="name" -->
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Seu Nome</label>
+                            <input type="text" id="name" name="name" required 
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-sky-500 focus:border-sky-500 transition duration-150"
+                                placeholder="João Silva">
+                        </div>
+                        
+                        <!-- Campo E-mail - name="email" -->
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">E-mail</label>
+                            <input type="email" id="email" name="email" required 
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-sky-500 focus:border-sky-500 transition duration-150"
+                                placeholder="seu.nome@empresa.com.br">
+                        </div>
+                        
+                        <!-- Campo Empresa - name="company" -->
+                        <div>
+                            <label for="company" class="block text-sm font-medium text-gray-700 mb-1">Empresa</label>
+                            <input type="text" id="company" name="company" required 
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-sky-500 focus:border-sky-500 transition duration-150"
+                                placeholder="Nome da Sua Indústria">
+                        </div>
+                        
+                        <!-- NOVO CAMPO: CNPJ - name="cnpj" -->
+                        <div>
+                            <label for="cnpj" class="block text-sm font-medium text-gray-700 mb-1">CNPJ (Apenas números)</label>
+                            <input type="text" id="cnpj" name="cnpj" required 
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-sky-500 focus:border-sky-500 transition duration-150"
+                                placeholder="00000000000000"
+                                maxlength="14" 
+                                pattern="\d{14}" 
+                                title="Por favor, insira 14 dígitos numéricos.">
+                        </div>
+                        
+                        <!-- Campo Telefone - name="mobile_phone" -->
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Telefone (WhatsApp)</label>
+                            <input type="tel" id="phone" name="mobile_phone" required 
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-sky-500 focus:border-sky-500 transition duration-150"
+                                placeholder="(XX) XXXXX-XXXX">
+                        </div>
+                        
+                        <!-- O Botão de Submit REAL AGORA ESTÁ VISÍVEL E ESTILIZADO -->
+                        <button type="submit" id="submitCrmButton" 
+                            class="w-full whatsapp-color text-white font-bold py-3 rounded-lg shadow-lg hover:opacity-90 transition duration-300 transform hover:scale-[1.01] focus:outline-none focus:ring-4 focus:ring-green-500 focus:ring-opacity-50 mt-6 flex items-center justify-center space-x-2">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                            <span>RECEBER ORÇAMENTO</span>
+                        </button>
+                    </form>
+
+                    <!-- Mensagem de Sucesso (Oculta inicialmente) -->
+                    <div id="successMessage" class="hidden mt-6 p-4 rounded-lg bg-green-100 text-green-700 font-semibold text-center" role="alert">
+                        ✅ Dados enviados com sucesso! Verifique o WhatsApp ou seu e-mail para o orçamento.
+                    </div>
+                    <!-- Mensagem de Erro (Oculta inicialmente) -->
+                    <div id="errorMessage" class="hidden mt-6 p-4 rounded-lg bg-red-100 text-red-700 font-semibold text-center" role="alert">
+                        ❌ Falha ao enviar dados para o CRM. Por favor, tente novamente.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    
+    <!-- Seção de Prova Social (Logos de Clientes) - Removendo todo o padding top -->
+    <section class="pt-0 pb-4 bg-gray-100"> 
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-2xl font-semibold text-gray-700 mb-10">Confiança Comprovada por Grandes Nomes da Indústria</h3>
+            <!-- Logos de Clientes -->
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+                <img src="https://i.imgur.com/cHkMBdO.png" alt="Logo de Cliente 1" class="client-logo">
+                <img src="https://i.imgur.com/hR9wBTK.png" alt="Logo de Cliente 2" class="client-logo">
+                <img src="https://i.imgur.com/58VH9Xy.png" alt="Logo de Cliente 3" class="client-logo">
+                <img src="https://i.imgur.com/BroEHsW.png" alt="Logo de Cliente 4" class="client-logo">
+                <img src="https://i.imgur.com/G8imm14.png" alt="Logo de Cliente 5" class="client-logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer - Removendo a margem superior desnecessária -->
+    <footer class="main-color py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-300">
+            <!-- Logo Vastin no rodapé -->
+            <img src="https://i.imgur.com/RmWh4cS.png" alt="Logo Vastin Rodapé" class="footer-logo mx-auto">
+            <!-- Informações de contato e direitos autorais -->
+            <p class="text-sm">&copy; 2025 Vastin Indústria de Válvulas. Todos os direitos reservados.</p>
+            <p class="text-sm mt-1">CNPJ: 68.113.158/0001-01 | Vastin Indústria de Válvulas LTDA.</p>
+            <p class="text-sm mt-1">Endereço: Rua Salvador Leme, 366 - Bom Retiro, São Paulo/SP.</p>
+        </div>
+    </footer>
+
+    <script>
+        const form = document.getElementById('leadCaptureForm');
+        const submitButton = document.getElementById('submitCrmButton');
+        const successMessage = document.getElementById('successMessage');
+        const errorMessage = document.getElementById('errorMessage');
+        const whatsappUrl = 'https://wa.me/5511942283302?text=Oi, vim pelo site e gostaria de um orçamento!';
+        
+        // Endpoint real do Papirun
+        const papirunUrl = 'https://app.pipe.run/webservice/integradorJson?hash=1243f3d9-293c-4ce9-938c-8a8aaad01988';
+
+        // Função auxiliar para exibir mensagens de status
+        function showStatusMessage(isSuccess) {
+            errorMessage.classList.add('hidden');
+            successMessage.classList.add('hidden');
+
+            const message = isSuccess ? successMessage : errorMessage;
+            message.classList.remove('hidden');
+
+            // Oculta os inputs e botão
+            form.querySelectorAll('input, label, button').forEach(el => el.style.display = 'none');
+            
+            // Simula um atraso para dar feedback visual e reseta o formulário
+            setTimeout(() => {
+                message.classList.add('hidden');
+                form.reset();
+                
+                // Restaura o display dos elementos
+                form.querySelectorAll('input, label, button').forEach(el => {
+                    if (el.tagName === 'BUTTON') { 
+                        el.style.display = 'flex'; // O botão é flex
+                    } else {
+                        el.style.display = 'block';
+                    }
+                });
+            }, 5000); // Mostra por 5 segundos
+        }
+
+        /*
+         * Este script lida com o envio de dados via JSON (fetch) para o Papirun 
+         * e, em seguida, dispara o evento de conversão e abre o WhatsApp.
+         */
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault(); // Impede a submissão padrão do formulário
+            
+            // Coleta os dados do formulário
+            const formData = new FormData(form);
+            const data = {};
+            formData.forEach((value, key) => {
+                data[key] = value;
+            });
+            
+            // Constrói o payload JSON exato que o Papirun espera
+            const payload = {
+                leads: [{
+                    // Dados do Formulário
+                    name: data.name,
+                    email: data.email,
+                    company: data.company,
+                    cnpj: data.cnpj,
+                    mobile_phone: data.mobile_phone,
+                    
+                    // Campos fixos exigidos ou boas práticas
+                    title: "Novo Lead - Landing Page Vastin",
+                    last_conversion: {
+                        source: "lp vastin" 
+                    }
+                }]
+            };
+
+            // Remove o botão para evitar cliques duplos durante o processamento
+            submitButton.disabled = true;
+
+            try {
+                // Envio para o Papirun via fetch
+                const response = await fetch(papirunUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(payload)
+                });
+
+                // Mesmo que o Papirun retorne um 200 OK, consideramos o envio bem-sucedido.
+                if (response.ok || response.status === 200) {
+                    
+                    // *** NOVO: Dispara evento de conversão para o GTM ***
+                    if (typeof dataLayer !== 'undefined') {
+                        dataLayer.push({
+                            'event': 'lead_form_submit', // Nome do evento
+                            'form_name': 'orcamento_vastin',
+                            'lead_email': data.email
+                        });
+                    }
+                    // ***************************************************
+                    
+                    showStatusMessage(true); // Exibe sucesso
+                    window.open(whatsappUrl, '_blank'); // Abre o WhatsApp
+                } else {
+                    // Se houver um problema de rede ou resposta não 200
+                    console.error('Falha no envio para o Papirun. Status:', response.status);
+                    showStatusMessage(false); // Exibe erro
+                }
+            } catch (error) {
+                // Se houver um erro de rede (offline, CORS, etc)
+                console.error('Erro de rede ao enviar para o Papirun:', error);
+                showStatusMessage(false); // Exibe erro
+            } finally {
+                submitButton.disabled = false; // Habilita o botão
+            }
+        });
+        
+    </script>
+</body>
+</html>
